@@ -1,0 +1,146 @@
+/* MARK: Root Colors */
+:root {
+    --primary: #FF3B77 !important;
+    --secondary: #FFC800 !important;
+    --text: #2E2E2E !important;
+    --accent: #2E2E2E !important;
+    --background: #FFFFFF !important;
+}
+
+/* MARK: Button Overrides */
+.btn-primary {
+    background-color: var(--primary);
+    border-color: var(--primary);
+    color: var(--background);
+}
+
+.btn-primary:hover,
+.btn-primary:focus,
+.btn-primary:active {
+    background-color: var(--secondary);
+    border-color: var(--secondary);
+    color: var(--background);
+}
+
+.btn-secondary {
+    background-color: var(--secondary) !important;
+    border-color: var(--secondary) !important;
+    color: var(--text) !important;
+}
+
+.btn-check:checked+.btn,
+.btn.active,
+.btn.show,
+.btn:first-child:active,
+:not(.btn-check)+.btn:active {
+    background-color: var(--secondary);
+    border-color: var(--secondary);
+    color: var(--background);
+}
+
+.btn-secondary:hover,
+.btn-secondary:focus,
+.btn-secondary:active {
+    background-color: darken(var(--secondary), 80%);
+    border-color: darken(var(--secondary), 80%);
+    color: var(--text);
+}
+
+.btn-accent {
+    background-color: var(--accent);
+    border-color: var(--accent);
+    color: var(--background);
+}
+
+.btn-accent:hover,
+.btn-accent:focus,
+.btn-accent:active {
+    background-color: darken(var(--accent), 10%);
+    border-color: darken(var(--accent), 10%);
+    color: var(--background);
+}
+
+/* MARK: Navbar */
+.navbar {
+    background-color: var(--background);
+    border-bottom: 8px solid var(--secondary);
+    box-shadow: 2px 2px 12px 2px var(--primary);
+}
+
+.navbar-brand {
+    color: var(--primary);
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.navbar-nav .nav-item .nav-link {
+    color: var(--text);
+    font-size: 1rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    text-transform: none;
+}
+
+.navbar-nav .nav-item .nav-link.active {
+    color: var(--primary);
+}
+
+.navbar-toggler {
+    border-color: rgba(0, 0, 0, 0.1);
+}
+
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(0, 0, 0, 0.5)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+
+.navbar-nav .nav-item .nav-link:hover {
+    color: var(--primary);
+}
+
+.navbar-nav .nav-item.mx-3 {
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+}
+
+/* Collapse navbar on smaller screens */
+@media (max-width: 992px) {
+    .navbar-collapse {
+        justify-content: flex-start;
+    }
+
+    .navbar-nav .nav-item {
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .navbar-nav .nav-item .nav-link {
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+}
+
+/* MARK: Rarity */
+.cover {
+    background-image: url('../img/rarity.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: calc(100vh - 70px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cover h1 {
+    font-weight: bold;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.cover button {
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+.toast-primary {
+    background-color: var(--primary) !important;
+    color: var(--background) !important;
+}

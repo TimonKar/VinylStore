@@ -118,6 +118,81 @@
         padding-right: 1rem;
     }
 }
+/* MARK: Home Page */
+.header-image {
+    width: 100%;
+    height: 300px; /* Fixed height */
+    object-fit: cover; /* Ensures the image maintains aspect ratio and doesn't stretch */
+}
+.header-container {
+    border-bottom: 5px solid var(--secondary); 
+}
+/* Carousel container styling */
+.carousel {
+    position: relative;
+    width: 100%;
+    max-width: 600px;
+    margin: 50px auto;
+}
+
+/* Carousel item styling */
+.carousel-item {
+    display: none;
+    text-align: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.carousel-item.active {
+    display: flex;
+}
+
+/* Album image styling */
+.carousel-item img {
+    max-width: 200px;
+    border-radius: 5px;
+}
+
+/* Album info */
+.album-info {
+    margin-top: 20px;
+}
+
+.album-price {
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.album-title {
+    font-size: 1.5rem;
+}
+
+.album-artist {
+    font-size: 1rem;
+    color: gray;
+}
+
+/* Carousel controls styling */
+.carousel-control-prev,
+.carousel-control-next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 2rem;
+    color: #ff007f;
+    border: none;
+    background: none;
+    cursor: pointer;
+    z-index: 1000;
+}
+
+.carousel-control-prev {
+    left: 0;
+}
+
+.carousel-control-next {
+    right: 0;
+}
 
 /* MARK: Rarity */
 .cover {

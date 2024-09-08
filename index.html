@@ -13,6 +13,9 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 
+    <!-- SweetAlert CSS & JS -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
     <!-- Custom CSS -->
     <link rel="stylesheet" href="css/style.css">
 </head>
@@ -57,8 +60,9 @@
     <!-- Vinyl Carousel Section -->
     <div id="vinylCarousel" class="carousel">
         <div class="carousel-inner">
-            <div class="carousel-item active">
-                <img src="img/vinyl/oasis.jpg" alt="Satellites Album">
+            <!-- Oasis Album -->
+            <div class="carousel-item active" data-album="morningGlory">
+                <img src="img/vinyl/oasis.jpg" alt="(What's The Story) Morning Glory? Album">
                 <div class="album-info">
                     <p class="album-price">$140</p>
                     <p class="album-title">(What's The Story) Morning Glory? </p>
@@ -66,12 +70,13 @@
                 </div>
             </div>
 
-            <div class="carousel-item">
-                <img src="img/album2.png" alt="Another Album">
+            <!-- Dexter Gordon Album -->
+            <div class="carousel-item" data-album="dexterGordon">
+                <img src="img/vinyl/dextergordon.jpg" alt="Dexter Gordon Clubhouse Album">
                 <div class="album-info">
-                    <p class="album-price">$19.99</p>
-                    <p class="album-title">Different Album</p>
-                    <p class="album-artist">Another Artist</p>
+                    <p class="album-price">$300</p>
+                    <p class="album-title">Clubhouse</p>
+                    <p class="album-artist">Dexter Gordon</p>
                 </div>
             </div>
         </div>
@@ -80,6 +85,87 @@
         <button class="carousel-control-prev">‹</button>
         <button class="carousel-control-next">›</button>
     </div>
+    <!-- Latest News Section -->
+    <section id="latest-news" class="container my-5">
+        <h2 class="text-start mb-4">Ons laatste nieuws <span class="text-danger">›</span></h2>
+
+        <div class="row">
+            <!-- News Item 1 -->
+            <div class="col-md-12 mb-4">
+                <div class="d-flex align-items-start p-4 bg-warning">
+                    <img src="img/news/linkinpark.jpg" alt="News Image 1" class="me-4"
+                        style="width: 500px; height: auto;">
+                    <div>
+                        <h3>Linkin Park herrijst uit de as met 'From Zero', een nieuw begin vol energie
+                        </h3>
+                        <h5>by VinylAddict</h5>
+                        <p>
+                            Na een periode van stilte en reflectie is Linkin Park terug, herboren en klaar om de wereld
+                            te veroveren met hun nieuwe album 'From Zero'. Deze plaat, die op 15 november verschijnt,
+                            markeert een nieuw hoofdstuk in de geschiedenis van de band, met nieuwe leden en een
+                            hernieuwde energie.
+                            <br><br>
+                            'From Zero' is een album dat de essentie van Linkin Park omarmt, maar tegelijkertijd een
+                            frisse wind door hun kenmerkende geluid laat waaien. Het album is een eerbetoon aan het
+                            verleden, het heden en een vooruitblik op de toekomst. Met nieuwe zangeres Emily Armstrong
+                            en drummer Colin Brittain aan boord, heeft de band een nieuwe dynamiek gevonden die zich
+                            vertaalt in een krachtige en opzwepende sound.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- News Item 2 -->
+            <div class="col-md-12 mb-4">
+                <div class="d-flex align-items-start p-4 bg-pink">
+                    <img src="img/news/coldplay.webp" alt="News Image 1" class="me-4"
+                        style="width: 500px; height: auto;">
+                    <div>
+                        <h3>Coldplay is terug met hun langverwachte tiende album Moon Music </h3>
+                        <h5>by VinylAddict</h5>
+                        <p>
+                            Coldplay is terug met hun langverwachte tiende album, Moon Music, en zet daarbij een grote
+                            stap voorwaarts in duurzaamheid. Deze limited edition 1e persing van Moon Music op EcoRecord
+                            rPET LP is niet alleen een muzikale traktatie, maar ook een bewuste keuze voor de planeet.
+                            <br><br>
+                            Elk exemplaar van deze unieke LP is gemaakt van negen gerecyclede PET-plastic flessen,
+                            waardoor de productie van meer dan 25 ton nieuw plastic wordt voorkomen. Bovendien zorgt het
+                            gebruik van spuitgiettechnologie voor een indrukwekkende 85% reductie in CO2-uitstoot
+                            tijdens het productieproces in vergelijking met traditioneel vinyl. Dit is de eerste keer
+                            dat een album wereldwijd wordt uitgebracht op dit innovatieve 140g EcoRecord rPET
+                            LP-formaat.
+
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- News Item 3 -->
+            <div class="col-md-12">
+                <div class="d-flex align-items-start p-4 bg-warning">
+                    <img src="img/news/smile.webp" alt="News Image 1" class="me-4"
+                        style="width: 500px; height: auto;">
+                    <div>
+                        <h3>The Smile is (alweer) terug met "Cutouts"!
+                        </h3>
+                        <h5>by VinylAddict</h5>
+                        <p>
+                            Thom Yorke, Jonny Greenwood en Tom Skinner [Sons of Kemet] verrassen ons opnieuw met een
+                            compleet nieuw album vol muzikale creativiteit. Na het succes van "A Light for Attracting
+                            Attention" en "The Smile (Live at Montreux Jazz Festival, July 2022)" kunnen we niet wachten
+                            om te horen wat ze dit keer voor ons in petto hebben.
+                            <br><br>
+                            "Cutouts" is opgenomen in Oxford en de legendarische Abbey Road Studios, tegelijkertijd met
+                            "Wall Of Eyes". Het album bevat prachtige strijkarrangementen van het London Contemporary
+                            Orchestra, die ongetwijfeld een extra dimensie aan de muziek zullen toevoegen. Het artwork,
+                            geschilderd door Stanley Donwood en Thom Yorke tijdens het opnameproces, belooft net zo
+                            intrigerend te zijn als de muziek zelf.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
     <script src="js/carousel.js"></script>
 </body>

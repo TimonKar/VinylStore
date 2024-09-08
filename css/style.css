@@ -118,16 +118,18 @@
         padding-right: 1rem;
     }
 }
+
 /* MARK: Home Page */
 .header-image {
     width: 100%;
-    height: 300px; /* Fixed height */
-    object-fit: cover; /* Ensures the image maintains aspect ratio and doesn't stretch */
+    height: 200px;
+    object-fit: cover;
 }
+
 .header-container {
-    border-bottom: 5px solid var(--secondary); 
+    border-bottom: 5px solid var(--secondary);
 }
-/* Carousel container styling */
+
 .carousel {
     position: relative;
     width: 100%;
@@ -135,7 +137,6 @@
     margin: 50px auto;
 }
 
-/* Carousel item styling */
 .carousel-item {
     display: none;
     text-align: center;
@@ -147,9 +148,9 @@
     display: flex;
 }
 
-/* Album image styling */
 .carousel-item img {
-    max-width: 200px;
+    width: 450px;
+    min-width: 250px;
     border-radius: 5px;
 }
 
@@ -176,16 +177,20 @@
 .carousel-control-prev,
 .carousel-control-next {
     position: absolute;
-    top: 50%;
+    top: 35%;
     transform: translateY(-50%);
-    font-size: 2rem;
-    color: #ff007f;
+    font-size: 6rem;
+    color: var(--primary);
     border: none;
     background: none;
     cursor: pointer;
     z-index: 1000;
 }
+.carousel-control-prev:hover,
+.carousel-control-next:hover{
+    color: var(--primary);
 
+}
 .carousel-control-prev {
     left: 0;
 }
@@ -193,6 +198,103 @@
 .carousel-control-next {
     right: 0;
 }
+
+
+/* Style for the tracklist inside SweetAlert */
+.tracklist {
+    list-style: none;
+    padding-left: 0;
+    margin-top: 10px;
+    font-size: 1rem;
+    color: #555;
+}
+
+.tracklist li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 8px;
+    padding-left: 10px;
+}
+
+.tracklist li i {
+    color: var(--primary);
+    /* Pink color for the music note */
+    margin-right: 10px;
+    font-size: 1.2rem;
+}
+/* Styling for the Latest News Section */
+#latest-news {
+    margin-top: 50px;
+    padding-bottom: 50px;
+}
+
+#latest-news h2 {
+    font-size: 2rem;
+    color: #000;
+}
+
+#latest-news .bg-warning, 
+#latest-news .bg-pink {
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+}
+
+#latest-news .bg-pink {
+    background-color: var(--primary);
+}
+
+#latest-news h3 {
+    font-size: 1.5rem;
+    color: #000;
+    margin-bottom: 10px;
+}
+
+#latest-news h5 {
+    font-size: 1.2rem;
+    color: #555;
+    margin-bottom: 15px;
+}
+
+#latest-news p {
+    font-size: 1rem;
+    color: #666;
+    line-height: 1.6;
+}
+
+#latest-news img {
+    width: 200px;
+    height: auto;
+    border-radius: 5px;
+    object-fit: cover;
+}
+
+#latest-news .d-flex {
+    align-items: start;
+}
+
+@media (max-width: 768px) {
+    #latest-news img {
+        width: 150px;
+    }
+
+    #latest-news h2 {
+        font-size: 1.8rem;
+    }
+
+    #latest-news h3 {
+        font-size: 1.3rem;
+    }
+
+    #latest-news h5 {
+        font-size: 1.1rem;
+    }
+
+    #latest-news p {
+        font-size: 0.9rem;
+    }
+}
+
 
 /* MARK: Rarity */
 .cover {

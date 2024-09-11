@@ -21,6 +21,7 @@
     <!-- Custom CSS & JS -->
     <link rel="stylesheet" href="../css/style.css">
     <script src="../js/rarity.js"></script>
+
 </head>
 
 <body>
@@ -52,6 +53,67 @@
             </div>
         </div>
     </nav>
+
+    <div class="container form-container">
+        <div class="row">
+            <div class="col-md-6">
+                <div class="contact-form">
+                    <h4>Neem contact met ons op</h4>
+                    <form id="contactForm">
+                        <div class="mb-3">
+                            <label for="name" class="form-label">Naam <span class="text-danger">*</span></label>
+                            <input type="text" class="form-control" id="name" placeholder="Uw naam" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Email <span class="text-danger">*</span></label>
+                            <input type="email" class="form-control" id="email" placeholder="Uw email" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="phone" class="form-label">Telefoonnummer <span class="text-danger">*</span></label>
+                            <input type="tel" class="form-control" id="phone" placeholder="Uw telefoonnummer" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="message" class="form-label">Vraag/Opmerking <span class="text-danger">*</span></label>
+                            <textarea class="form-control" id="message" rows="3" placeholder="Uw vraag of opmerking" required></textarea>
+                        </div>
+                        <div class="form-check mb-3">
+                            <input class="form-check-input" type="checkbox" id="newsletter">
+                            <label class="form-check-label" for="newsletter">
+                                Aanmelden voor de nieuwsbrief
+                            </label>
+                        </div>
+                        <button type="submit" class="btn btn-submit">Submit</button>
+                    </form>
+                </div>
+            </div>
+
+            <!-- Map -->
+            <div class="col-md-6">
+                <div class="map-container">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d246650.031399719!2d4.548469908422335!3d52.39403767052805!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c5d5fa58bbded5%3A0x8f0c6f6e4d9c1658!2sNederland!5e0!3m2!1snl!2snl!4v1636532686614!5m2!1snl!2snl"
+                        allowfullscreen="" loading="lazy"></iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        $(document).ready(function () {
+            $('#contactForm').submit(function (e) {
+                e.preventDefault();
+
+                // Basic form validation
+                var name = $('#name').val().trim();
+                var email = $('#email').val().trim();
+                var phone = $('#phone').val().trim();
+                var message = $('#message').val().trim();
+
+                toastr.success("Uw bericht is succesvol verzonden!", "Verzonden");
+            });
+        });
+    </script>
+
 </body>
 
 </html>

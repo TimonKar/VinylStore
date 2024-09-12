@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vinyl Addicts</title>
+    <!-- jquery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!-- bootstrap CSS & JS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <!-- Toastr CSS & JS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
+    <!-- SweetAlert CSS & JS -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <!-- Custom CSS & JS -->
+    <link rel="stylesheet" href="../css/style.css">
+    <script src="../js/rarity.js"></script>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="../index.html">Vinyl Addict</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="../pages/aboutus.html">Over ons</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../pages/overview.html">LP Overzicht</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../pages/raritycheck.html">Zeldzaamheid Checker</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="news.html">Nieuws</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../pages/contact.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Latest News Section -->
+    <section id="latest-news" class="container my-5">
+        <h2 class="text-start mb-4">Ons laatste nieuws </h2>
+
+        <div class="row">
+            <!-- News Item 1 -->
+            <div class="col-md-12 mb-4">
+                <div class="d-flex align-items-start p-4 bg-warning">
+                    <img src="../img/news/linkinpark.jpg" alt="News Image 1" class="me-4" style="width: 500px; height: auto;">
+                    <div>
+                        <h3>Linkin Park herrijst uit de as met 'From Zero', een nieuw begin vol energie</h3>
+                        <h5>by VinylAddict</h5>
+                        <p>
+                            Na een periode van stilte en reflectie is Linkin Park terug, herboren en klaar om de wereld
+                            te veroveren met hun nieuwe album 'From Zero'. Deze plaat, die op 15 november verschijnt,
+                            markeert een nieuw hoofdstuk in de geschiedenis van de band, met nieuwe leden en een
+                            hernieuwde energie.
+                            <br><br>
+                            'From Zero' is een album dat de essentie van Linkin Park omarmt, maar tegelijkertijd een
+                            frisse wind door hun kenmerkende geluid laat waaien. Het album is een eerbetoon aan het
+                            verleden, het heden en een vooruitblik op de toekomst. Met nieuwe zangeres Emily Armstrong
+                            en drummer Colin Brittain aan boord, heeft de band een nieuwe dynamiek gevonden die zich
+                            vertaalt in een krachtige en opzwepende sound.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- News Item 2 -->
+            <div class="col-md-12 mb-4">
+                <div class="d-flex align-items-start p-4 bg-pink">
+                    <img src="../img/news/coldplay.webp" alt="Coldplay News" class="me-4" style="width: 500px; height: auto;">
+                    <div>
+                        <h3>Coldplay is terug met hun langverwachte tiende album Moon Music</h3>
+                        <h5>by VinylAddict</h5>
+                        <p>
+                            Coldplay is terug met hun langverwachte tiende album, Moon Music, en zet daarbij een grote
+                            stap voorwaarts in duurzaamheid. Deze limited edition 1e persing van Moon Music op EcoRecord
+                            rPET LP is niet alleen een muzikale traktatie, maar ook een bewuste keuze voor de planeet.
+                            <br><br>
+                            Elk exemplaar van deze unieke LP is gemaakt van negen gerecyclede PET-plastic flessen,
+                            waardoor de productie van meer dan 25 ton nieuw plastic wordt voorkomen. Bovendien zorgt het
+                            gebruik van spuitgiettechnologie voor een indrukwekkende 85% reductie in CO2-uitstoot
+                            tijdens het productieproces in vergelijking met traditioneel vinyl. Dit is de eerste keer
+                            dat een album wereldwijd wordt uitgebracht op dit innovatieve 140g EcoRecord rPET
+                            LP-formaat.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- News Item 3 -->
+            <div class="col-md-12">
+                <div class="d-flex align-items-start p-4 bg-warning">
+                    <img src="../img/news/smile.webp" alt="The Smile News" class="me-4" style="width: 500px; height: auto;">
+                    <div>
+                        <h3>The Smile is terug met "Cutouts"!</h3>
+                        <h5>by VinylAddict</h5>
+                        <p>
+                            Thom Yorke, Jonny Greenwood en Tom Skinner [Sons of Kemet] verrassen ons opnieuw met een
+                            compleet nieuw album vol muzikale creativiteit. Na het succes van "A Light for Attracting
+                            Attention" en "The Smile (Live at Montreux Jazz Festival, July 2022)" kunnen we niet wachten
+                            om te horen wat ze dit keer voor ons in petto hebben.
+                            <br><br>
+                            "Cutouts" is opgenomen in Oxford en de legendarische Abbey Road Studios, tegelijkertijd met
+                            "Wall Of Eyes". Het album bevat prachtige strijkarrangementen van het London Contemporary
+                            Orchestra, die ongetwijfeld een extra dimensie aan de muziek zullen toevoegen. Het artwork,
+                            geschilderd door Stanley Donwood en Thom Yorke tijdens het opnameproces, belooft net zo
+                            intrigerend te zijn als de muziek zelf.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    
+</body>
+
+</html>

@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vinyl Addicts</title>
+    <!-- jquery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!-- bootstrap CSS & JS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <!-- Toastr CSS & JS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
+    <!-- SweetAlert CSS & JS -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <!-- Custom CSS & JS -->
+    <link rel="stylesheet" href="../css/style.css">
+    <script src="../js/rarity.js"></script>
+
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="../index.html">Vinyl Addict</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="../pages/aboutus.html">Over ons</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../pages/overview.html">LP Overzicht</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../pages/raritycheck.html">Zeldzaamheid Checker</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../pages/news.html">Nieuws</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="contact.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container form-container">
+        <div class="row">
+            <div class="col-md-6">
+                <div class="contact-form">
+                    <h4>Neem contact met ons op</h4>
+                    <form id="contactForm">
+                        <div class="mb-3">
+                            <label for="name" class="form-label">Naam <span class="text-danger">*</span></label>
+                            <input type="text" class="form-control" id="name" placeholder="Uw naam" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Email <span class="text-danger">*</span></label>
+                            <input type="email" class="form-control" id="email" placeholder="Uw email" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="phone" class="form-label">Telefoonnummer <span class="text-danger">*</span></label>
+                            <input type="tel" class="form-control" id="phone" placeholder="Uw telefoonnummer" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="message" class="form-label">Vraag/Opmerking <span class="text-danger">*</span></label>
+                            <textarea class="form-control" id="message" rows="3" placeholder="Uw vraag of opmerking" required></textarea>
+                        </div>
+                        <div class="form-check mb-3">
+                            <input class="form-check-input" type="checkbox" id="newsletter">
+                            <label class="form-check-label" for="newsletter">
+                                Aanmelden voor de nieuwsbrief
+                            </label>
+                        </div>
+                        <button type="submit" class="btn btn-submit">Submit</button>
+                    </form>
+                </div>
+            </div>
+
+            <!-- Map -->
+            <div class="col-md-6">
+                <div class="map-container">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d246650.031399719!2d4.548469908422335!3d52.39403767052805!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c5d5fa58bbded5%3A0x8f0c6f6e4d9c1658!2sNederland!5e0!3m2!1snl!2snl!4v1636532686614!5m2!1snl!2snl"
+                        allowfullscreen="" loading="lazy"></iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        $(document).ready(function () {
+            $('#contactForm').submit(function (e) {
+                e.preventDefault();
+
+                // Basic form validation
+                var name = $('#name').val().trim();
+                var email = $('#email').val().trim();
+                var phone = $('#phone').val().trim();
+                var message = $('#message').val().trim();
+
+                toastr.success("Uw bericht is succesvol verzonden!", "Verzonden");
+            });
+        });
+    </script>
+
+</body>
+
+</html>

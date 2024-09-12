@@ -119,6 +119,326 @@
     }
 }
 
+/* MARK: Home Page */
+.header-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.header-container {
+    border-bottom: 5px solid var(--secondary);
+}
+
+.carousel {
+    position: relative;
+    width: 100%;
+    max-width: 600px;
+    margin: 50px auto;
+}
+
+.carousel-item {
+    display: none;
+    text-align: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.carousel-item.active {
+    display: flex;
+}
+
+.carousel-item img {
+    width: 450px;
+    min-width: 250px;
+    border-radius: 5px;
+}
+
+/* Album info */
+.album-info {
+    margin-top: 20px;
+}
+
+.album-price {
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.album-title {
+    font-size: 1.5rem;
+}
+
+.album-artist {
+    font-size: 1rem;
+    color: gray;
+}
+
+/* Carousel controls styling */
+.carousel-control-prev,
+.carousel-control-next {
+    position: absolute;
+    top: 35%;
+    transform: translateY(-50%);
+    font-size: 6rem;
+    color: var(--primary);
+    border: none;
+    background: none;
+    cursor: pointer;
+    z-index: 1000;
+}
+.carousel-control-prev:hover,
+.carousel-control-next:hover{
+    color: var(--primary);
+
+}
+.carousel-control-prev {
+    left: 0;
+}
+
+.carousel-control-next {
+    right: 0;
+}
+
+/* MARK: ABORTUS PAGE */
+
+.about-section {
+    padding: 50px 15px;
+}
+.about-section h1 {
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+.about-section ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+.about-section ul li {
+    margin-bottom: 10px;
+}
+.about-section p {
+    font-size: 16px;
+}
+.about-section img {
+    width: 100%;
+    height: auto;
+}
+
+/* Style for the tracklist inside SweetAlert */
+.tracklist {
+    list-style: none;
+    padding-left: 0;
+    margin-top: 10px;
+    font-size: 1rem;
+    color: #555;
+}
+
+.tracklist li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 8px;
+    padding-left: 10px;
+}
+
+.tracklist li i {
+    color: var(--primary);
+    /* Pink color for the music note */
+    margin-right: 10px;
+    font-size: 1.2rem;
+}
+/* Styling for the Latest News Section */
+#latest-news {
+    margin-top: 50px;
+    padding-bottom: 50px;
+}
+
+#latest-news h2 {
+    font-size: 2rem;
+    color: #000;
+}
+
+#latest-news .bg-warning, 
+#latest-news .bg-pink {
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+}
+
+#latest-news .bg-pink {
+    background-color: var(--primary);
+}
+
+#latest-news h3 {
+    font-size: 1.5rem;
+    color: #000;
+    margin-bottom: 10px;
+}
+
+#latest-news h5 {
+    font-size: 1.2rem;
+    color: #555;
+    margin-bottom: 15px;
+}
+
+#latest-news p {
+    font-size: 1rem;
+    color: #666;
+    line-height: 1.6;
+}
+
+#latest-news img {
+    width: 200px;
+    height: auto;
+    border-radius: 5px;
+    object-fit: cover;
+}
+
+#latest-news .d-flex {
+    align-items: start;
+}
+
+@media (max-width: 768px) {
+    #latest-news img {
+        width: 150px;
+    }
+
+    #latest-news h2 {
+        font-size: 1.8rem;
+    }
+
+    #latest-news h3 {
+        font-size: 1.3rem;
+    }
+
+    #latest-news h5 {
+        font-size: 1.1rem;
+    }
+
+    #latest-news p {
+        font-size: 0.9rem;
+    }
+}
+/* MARK: LP overzicht*/
+/* MARK: LP overzicht */
+.artist-filter {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin-bottom: 30px;
+}
+
+.artist-filter img {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+    border: none;
+}
+
+.artist-filter img:hover {
+    transform: scale(1.05);
+}
+
+.artist-filter p {
+    text-align: center;
+    margin-top: 10px;
+    font-weight: 500;
+    color: var(--text);
+    font-size: 1rem;
+}
+
+.album-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    justify-items: center;
+}
+
+.album-card {
+    width: 70%;
+    border: none;
+    background-color: var(--background);
+    transition: box-shadow 0.3s ease;
+    padding: 10px;
+}
+
+.album-card:hover {
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);
+}
+
+.album-card img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+.album-details {
+    margin-top: 10px;
+    text-align: center;
+}
+
+.album-details h5 {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: var(--text);
+    margin-bottom: 5px;
+}
+
+.album-details p {
+    margin: 0;
+    font-size: 0.9rem;
+    color: #555;
+}
+
+.album-details .label {
+    font-size: 0.85rem;
+    color: var(--secondary);
+}
+
+
+/* MARK: Contact Us*/
+
+.form-container {
+    margin-top: 50px;
+}
+
+.contact-form {
+    background-color: var(--background);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.contact-form label {
+    color: var(--text);
+}
+
+.btn-submit {
+    background-color: var(--primary);
+    border: none;
+    color: var(--background);
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+.btn-submit:hover {
+    background-color: var(--secondary);
+}
+
+/* Map Styling */
+.map-container iframe {
+    width: 100%;
+    height: 450px;
+    border-radius: 8px;
+    border: none;
+}
+
+@media (max-width: 768px) {
+    .map-container {
+        margin-top: 20px;
+    }
+}
+
+
 /* MARK: Rarity */
 .cover {
     background-image: url('../img/rarity.jpg');

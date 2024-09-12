@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vinyl Addicts</title>
+    <!-- jquery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!-- bootstrap CSS & JS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <!-- Toastr CSS & JS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
+    <!-- SweetAlert CSS & JS -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <!-- Custom CSS & JS -->
+    <link rel="stylesheet" href="../css/style.css">
+    <script src="../js/rarity.js"></script>
+</head>
+
+<body>
+    <!-- Navbar Section -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="../index.html">Vinyl Addict</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="../pages/aboutus.html">Over ons</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="overview.html">LP Overzicht</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../pages/raritycheck.html">Zeldzaamheid Checker</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../pages/news.html">Nieuws</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../pages/contact.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Artist Filter Section -->
+    <div class="container my-4">
+        <div class="text-center mb-4">
+            <h3>Filter op artiest</h3>
+        </div>
+        <div class="d-flex justify-content-center artist-filter">
+            <div class="mx-2">
+                <img src="../img/lpoverzicht/louis.jpg" alt="Louis Armstrong">
+                <p>Louis Armstrong</p>
+            </div>
+            <div class="mx-2">
+                <img src="../img/lpoverzicht/beatles.webp" alt="The Beatles">
+                <p>The Beatles</p>
+            </div>
+            <div class="mx-2">
+                <img src="../img/lpoverzicht/oasis.jpg" alt="Oasis">
+                <p>Oasis</p>
+            </div>
+            <div class="mx-2">
+                <img src="../img/lpoverzicht/queen.jpg" alt="Queen">
+                <p>Queen</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Album Overview Section -->
+    <div class="container">
+        <div class="row">
+            <!-- Album 1 -->
+            <div class="col-lg-4 col-md-6 mb-4">
+                <div class="card album-card">
+                    <img src="../img/lpoverzicht/items/coleporter.jpg" alt="Ella Fitzgerald - Cole Porter Song Book">
+                    <div class="album-details p-3">
+                        <h5>Ella Fitzgerald - Cole Porter Song Book</h5>
+                        <p>Genre: Jazz</p>
+                        <p>Label: Verve Records</p>
+                        <p>Releasedatum: 1956</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Album 2 -->
+            <div class="col-lg-4 col-md-6 mb-4">
+                <div class="card album-card">
+                    <img src="../img/lpoverzicht/items/kindofblue.jpg" alt="Miles Davis - Kind of Blue">
+                    <div class="album-details p-3">
+                        <h5>Miles Davis - Kind of Blue</h5>
+                        <p>Genre: Jazz</p>
+                        <p>Label: Columbia Records</p>
+                        <p>Releasedatum: 1959</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Album 3 (The Beatles) -->
+            <div class="col-lg-4 col-md-6 mb-4">
+                <div class="card album-card">
+                    <img src="../img/lpoverzicht/items/sgtp.jpg" alt="The Beatles - Sgt. Pepper's Lonely Hearts Club Band">
+                    <div class="album-details p-3">
+                        <h5>The Beatles - Sgt. Pepper's Lonely Hearts Club Band</h5>
+                        <p>Genre: Rock</p>
+                        <p>Label: Parlophone</p>
+                        <p>Releasedatum: 1967</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Album 4 (Queen) -->
+            <div class="col-lg-4 col-md-6 mb-4">
+                <div class="card album-card">
+                    <img src="../img/lpoverzicht/items/nightatheopera.jpg" alt="Queen - A Night at the Opera">
+                    <div class="album-details p-3">
+                        <h5>Queen - A Night at the Opera</h5>
+                        <p>Genre: Rock</p>
+                        <p>Label: EMI Records</p>
+                        <p>Releasedatum: 1975</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Album 5 (Oasis) -->
+            <div class="col-lg-4 col-md-6 mb-4">
+                <div class="card album-card">
+                    <img src="../img/lpoverzicht/items/oasis.jpg" alt="Oasis - (What's the Story) Morning Glory?">
+                    <div class="album-details p-3">
+                        <h5>Oasis - (What's the Story) Morning Glory?</h5>
+                        <p>Genre: Britpop</p>
+                        <p>Label: Creation Records</p>
+                        <p>Releasedatum: 1995</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Album 6 (Fun, made-up album) -->
+            <div class="col-lg-4 col-md-6 mb-4">
+                <div class="card album-card">
+                    <img src="../img/lpoverzicht/items/hybrid.jpg" alt="Linkin Park - Hybrid Theory">
+                    <div class="album-details p-3">
+                        <h5>Linkin Park - Hybrid Theory</h5>
+                        <p>Genre: Nu Metal</p>
+                        <p>Label: Warner Records</p>
+                        <p>Releasedatum: 2000</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>

@@ -317,6 +317,83 @@
         font-size: 0.9rem;
     }
 }
+/* MARK: LP overzicht*/
+/* MARK: LP overzicht */
+.artist-filter {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin-bottom: 30px;
+}
+
+.artist-filter img {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+    border: none;
+}
+
+.artist-filter img:hover {
+    transform: scale(1.05);
+}
+
+.artist-filter p {
+    text-align: center;
+    margin-top: 10px;
+    font-weight: 500;
+    color: var(--text);
+    font-size: 1rem;
+}
+
+.album-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    justify-items: center;
+}
+
+.album-card {
+    width: 70%;
+    border: none;
+    background-color: var(--background);
+    transition: box-shadow 0.3s ease;
+    padding: 10px;
+}
+
+.album-card:hover {
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);
+}
+
+.album-card img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+.album-details {
+    margin-top: 10px;
+    text-align: center;
+}
+
+.album-details h5 {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: var(--text);
+    margin-bottom: 5px;
+}
+
+.album-details p {
+    margin: 0;
+    font-size: 0.9rem;
+    color: #555;
+}
+
+.album-details .label {
+    font-size: 0.85rem;
+    color: var(--secondary);
+}
+
 
 /* MARK: Contact Us*/
 
